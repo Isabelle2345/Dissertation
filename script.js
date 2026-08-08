@@ -117,20 +117,20 @@ function displayResults() {
   const finalOutcomeKey = calculateOutcome(userAnswers);
 
   const outcomeImages = {
-    AP: 'Outcome A.png',
-    SO: 'Outcome B.png',
-    AF: 'Outcome C.png',
-    IU: 'Outcome D.png',
-    DG: 'Outcome E.png'
-  };
+  AP: 'Outcome-A.png',
+  SO: 'Outcome-B.png',
+  AF: 'Outcome-C.png',
+  IU: 'Outcome-D.png',
+  DG: 'Outcome-E.png'
+};
 
-  const warningImages = {
-    AP: 'Outcome A warning.png',
-    SO: 'Outcome B warning.png',
-    AF: 'Outcome C warning.png',
-    IU: 'Outcome D warning.png',
-    DG: 'Outcome E warning.png',
-  };
+const warningImages = {
+  AP: 'Outcome-A-warning.png',
+  SO: 'Outcome-B-warning.png',
+  AF: 'Outcome-C-warning.png',
+  IU: 'Outcome-D-warning.png',
+  DG: 'Outcome-E-warning.png'
+};
 
   // Wrapper for both images
   const imageWrapper = document.createElement('div');
