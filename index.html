@@ -1,9 +1,11 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Algorithmic Performance</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,23 +15,29 @@
 
 <div id="container">
 
+    <!-- ============================= -->
     <!-- START PAGE -->
+    <!-- ============================= -->
+
     <section id="startPage" class="page active">
 
         <img
-            src="start.png"
+            src="Logo.png"
             alt="Start"
             class="logo"
         >
 
-        <button id="startBtn">
+        <button id="startBtn" type="button">
             Start
         </button>
 
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 1 -->
+    <!-- ============================= -->
+
     <section id="q1" class="page">
 
         <h2>Which topics interest you?</h2>
@@ -38,25 +46,25 @@
 
             <div
                 class="option"
-                onclick="nextQuestion('q1','Art')">
+                onclick="nextQuestion('q1', 'Art')">
                 Art
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q1','Politics')">
+                onclick="nextQuestion('q1', 'Politics')">
                 Politics
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q1','Entertainment')">
+                onclick="nextQuestion('q1', 'Entertainment')">
                 Entertainment
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q1','Technology')">
+                onclick="nextQuestion('q1', 'Technology')">
                 Technology
             </div>
 
@@ -65,7 +73,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 2 -->
+    <!-- ============================= -->
+
     <section id="q2" class="page">
 
         <h2>
@@ -76,25 +87,25 @@
 
             <div
                 class="option"
-                onclick="nextQuestion('q2','Like')">
+                onclick="nextQuestion('q2', 'Like')">
                 Like
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q2','Comment')">
+                onclick="nextQuestion('q2', 'Comment')">
                 Comment
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q2','Share')">
+                onclick="nextQuestion('q2', 'Share')">
                 Share
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q2','Scroll')">
+                onclick="nextQuestion('q2', 'Scroll')">
                 Scroll
             </div>
 
@@ -103,7 +114,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 3 -->
+    <!-- ============================= -->
+
     <section id="q3" class="page">
 
         <h2>
@@ -114,7 +128,7 @@
 
             <div
                 class="option-img"
-                onclick="nextQuestion('q3','A')">
+                onclick="nextQuestion('q3', 'A')">
 
                 <img
                     src="A.png"
@@ -126,7 +140,7 @@
 
             <div
                 class="option-img"
-                onclick="nextQuestion('q3','B')">
+                onclick="nextQuestion('q3', 'B')">
 
                 <img
                     src="B.png"
@@ -138,7 +152,7 @@
 
             <div
                 class="option-img"
-                onclick="nextQuestion('q3','C')">
+                onclick="nextQuestion('q3', 'C')">
 
                 <img
                     src="C.png"
@@ -152,7 +166,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 4 -->
+    <!-- ============================= -->
+
     <section id="q4" class="page">
 
         <h2>
@@ -164,7 +181,7 @@
 
             <div
                 class="option-img"
-                onclick="nextQuestion('q4','A-funny')">
+                onclick="nextQuestion('q4', 'A-funny')">
 
                 <img
                     src="A-funny.png"
@@ -176,7 +193,7 @@
 
             <div
                 class="option-img"
-                onclick="nextQuestion('q4','B-serious')">
+                onclick="nextQuestion('q4', 'B-serious')">
 
                 <img
                     src="B-serious.png"
@@ -188,10 +205,10 @@
 
             <div
                 class="option-img"
-                onclick="nextQuestion('q4','C-aspiration')">
+                onclick="nextQuestion('q4', 'C-aspiration')">
 
                 <img
-                    src="C-aspiration.png"
+                    src="C- aspiration.png"
                     alt="C-aspiration"
                 >
 
@@ -202,7 +219,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 5 -->
+    <!-- ============================= -->
+
     <section id="q5" class="page">
 
         <h2>
@@ -213,19 +233,19 @@
 
             <div
                 class="option"
-                onclick="nextQuestion('q5','Yes')">
+                onclick="nextQuestion('q5', 'Yes')">
                 Yes
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q5','No')">
+                onclick="nextQuestion('q5', 'No')">
                 No
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q5','Unsure')">
+                onclick="nextQuestion('q5', 'Unsure')">
                 Unsure
             </div>
 
@@ -234,7 +254,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 6 -->
+    <!-- ============================= -->
+
     <section id="q6" class="page">
 
         <h2>
@@ -246,13 +269,13 @@
 
             <div
                 class="option"
-                onclick="nextQuestion('q6','Similar')">
+                onclick="nextQuestion('q6', 'Similar')">
                 Similar
             </div>
 
             <div
                 class="option"
-                onclick="nextQuestion('q6','Unexpected')">
+                onclick="nextQuestion('q6', 'Unexpected')">
                 Unexpected
             </div>
 
@@ -261,7 +284,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- QUESTION 7 -->
+    <!-- ============================= -->
+
     <section id="q7" class="page">
 
         <h2>
@@ -278,31 +304,31 @@
 
                 <div
                     class="option"
-                    onclick="nextQuestion('q7',1)">
+                    onclick="nextQuestion('q7', 1)">
                     1
                 </div>
 
                 <div
                     class="option"
-                    onclick="nextQuestion('q7',2)">
+                    onclick="nextQuestion('q7', 2)">
                     2
                 </div>
 
                 <div
                     class="option"
-                    onclick="nextQuestion('q7',3)">
+                    onclick="nextQuestion('q7', 3)">
                     3
                 </div>
 
                 <div
                     class="option"
-                    onclick="nextQuestion('q7',4)">
+                    onclick="nextQuestion('q7', 4)">
                     4
                 </div>
 
                 <div
                     class="option"
-                    onclick="nextQuestion('q7',5)">
+                    onclick="nextQuestion('q7', 5)">
                     5
                 </div>
 
@@ -317,7 +343,10 @@
     </section>
 
 
+    <!-- ============================= -->
     <!-- RESULTS PAGE -->
+    <!-- ============================= -->
+
     <section id="results" class="page">
 
         <h2>
@@ -335,7 +364,10 @@
             your behaviour produced during the survey
         </h3>
 
-        <button onclick="goToNextSection()">
+        <button
+            id="resultsButton"
+            type="button"
+            onclick="goToNextSection()">
             Ready to move on?
         </button>
 
@@ -344,6 +376,7 @@
 </div>
 
 
+<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
