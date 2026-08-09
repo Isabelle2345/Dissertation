@@ -117,11 +117,11 @@ function displayResults() {
   const finalOutcomeKey = calculateOutcome(userAnswers);
 
   const outcomeImages = {
-  AP: <img src="Outcome-A.png"> img> 
-  SO: <img src="Outcome-B.png',
-  AF: <img src="Outcome-C.png',
-  IU: <img src="Outcome-D.png',
-  DG: <img src="Outcome-E.png'
+  AP: 'Outcome-A.png'
+  SO: 'Outcome-B.png',
+  AF: 'Outcome-C.png',
+  IU: 'Outcome-D.png',
+  DG: 'Outcome-E.png'
 };
 
 const warningImages = {
