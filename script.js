@@ -1,4 +1,3 @@
-```javascript
 // ======================================================
 // USER ANSWERS
 // ======================================================
@@ -646,4 +645,3 @@ function goToNextSection() {
         "https://isabellegriffiths.my.canva.site/dissertation-website";
 
 }
-```
