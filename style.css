@@ -1,200 +1,533 @@
-/* ---------------- Base Styles ---------------- */
+```css
+/* ======================================================
+   BASE STYLES
+====================================================== */
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Arial', sans-serif;
-  background-color: #0e0e0e;
-  color: #fff;
-  overflow: hidden; /* prevent scrolling */
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #0e0e0e;
+
+    color: #fff;
+
+    overflow: hidden;
+
 }
 
-/* ---------------- Container ---------------- */
+
+/* ======================================================
+   CONTAINER
+====================================================== */
+
 #container {
-  height: 100%;
-  width: 100%;
-  position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
 }
 
-/* ---------------- Pages ---------------- */
+
+/* ======================================================
+   PAGES
+====================================================== */
+
 .page {
-  display: none;
-  width: 100vw;
-  min-height: 100vh; /* full screen */
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  opacity: 0;
-  overflow-y: auto; /* allow scrolling if content is taller than viewport */
-  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+
+    display: none;
+
+    width: 100vw;
+
+    min-height: 100vh;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    padding: 20px;
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+
+    opacity: 0;
+
+    overflow-y: auto;
+
+    -webkit-overflow-scrolling: touch;
+
 }
+
 
 .page.active {
-  display: flex;
-  opacity: 1;
-  position: relative;
+
+    display: flex;
+
+    opacity: 1;
+
+    position: relative;
+
 }
 
-/* ---------------- Start Page ---------------- */
+
+/* ======================================================
+   START PAGE
+====================================================== */
+
 #startPage {
-  position: relative;
+
+    position: relative;
+
 }
+
 
 #startPage .logo {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+
+    width: 100%;
+
+    height: 100vh;
+
+    object-fit: cover;
+
 }
+
 
 #startBtn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  padding: 25px 60px;
-  border-radius: 15px;
-  border: 3px solid cyan;
-  background: transparent;
-  color: cyan;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    font-size: 2rem;
+
+    padding: 25px 60px;
+
+    border-radius: 15px;
+
+    border: 3px solid cyan;
+
+    background: transparent;
+
+    color: cyan;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        all 0.3s ease;
+
 }
+
 
 #startBtn:hover {
-  background: cyan;
-  color: #000;
-  transform: translate(-50%, -50%) scale(1.1);
+
+    background: cyan;
+
+    color: #000;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1.1);
+
 }
 
-/* ---------------- Headings ---------------- */
+
+/* ======================================================
+   HEADINGS
+====================================================== */
+
 h2 {
-  margin-bottom: 30px;
-  font-size: 2rem;
-  line-height: 1.3;
-  max-width: 90%;
+
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+
+    line-height: 1.3;
+
+    max-width: 90%;
+
 }
 
-/* ---------------- Question Options ---------------- */
+
+h3 {
+
+    max-width: 90%;
+
+    margin-top: 20px;
+
+}
+
+
+h4 {
+
+    margin-top: 15px;
+
+}
+
+
+/* ======================================================
+   QUESTION OPTIONS
+====================================================== */
+
 .options {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    width: 100%;
+
 }
 
-/* ---------------- Box Style for Options ---------------- */
-.option, .option-img {
-  padding: 20px 40px;
-  min-width: 150px;
-  min-height: 80px;
-  background: #1a1a1a;
-  color: cyan;
-  border: 2px solid cyan;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* ======================================================
+   OPTION BOXES
+====================================================== */
+
+.option,
+.option-img {
+
+    padding: 20px 40px;
+
+    min-width: 150px;
+
+    min-height: 80px;
+
+    background: #1a1a1a;
+
+    color: cyan;
+
+    border: 2px solid cyan;
+
+    border-radius: 12px;
+
+    font-size: 1.2rem;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        all 0.3s ease;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
 }
 
-.option:hover, .option-img:hover {
-  background: cyan;
-  color: #000;
-  transform: scale(1.05);
+
+.option:hover,
+.option-img:hover {
+
+    background: cyan;
+
+    color: #000;
+
+    transform: scale(1.05);
+
 }
 
-/* ---------------- Images Inside Options ---------------- */
+
+/* ======================================================
+   IMAGES INSIDE OPTIONS
+====================================================== */
+
+.option-img {
+
+    padding: 10px;
+
+}
+
+
 .option-img img {
-  width: 400px;
-  height: auto;
-  border-radius: 14px;
-  transition: all 0.3s ease;
+
+    width: 400px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 14px;
+
+    transition:
+        all 0.3s ease;
+
 }
+
 
 .option-img:hover img {
-  transform: scale(1.0);
+
+    transform: scale(1.0);
+
 }
 
-/* ---------------- Results Page ---------------- */
+
+/* ======================================================
+   SCALE QUESTION
+====================================================== */
+
+.scale-container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    width: 100%;
+
+}
+
+
+.scale-options {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+
+.scale-options .option {
+
+    min-width: 60px;
+
+    min-height: 60px;
+
+    padding: 15px;
+
+}
+
+
+.scale-label {
+
+    font-size: 1rem;
+
+}
+
+
+.scale-label.left {
+
+    text-align: right;
+
+}
+
+
+.scale-label.right {
+
+    text-align: left;
+
+}
+
+
+/* ======================================================
+   RESULTS
+====================================================== */
+
 #resultsContainer {
-  margin: 20px 0;
-  max-width: 180%;
-  text-align: center;
+
+    margin: 20px 0;
+
+    max-width: 100%;
+
+    text-align: center;
+
 }
 
-/* ---------------- Results Button ---------------- */
-#results button {
-  margin-top: 30px;
-  padding: 15px 40px;
-  font-size: 1.2rem;
-  border-radius: 12px;
-  border: 2px solid cyan;
-  background: transparent;
-  color: cyan;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+#resultsContainer img {
+
+    max-width: 100%;
+
 }
+
+
+/* ======================================================
+   RESULTS BUTTON
+====================================================== */
+
+#results button {
+
+    margin-top: 30px;
+
+    padding: 15px 40px;
+
+    font-size: 1.2rem;
+
+    border-radius: 12px;
+
+    border: 2px solid cyan;
+
+    background: transparent;
+
+    color: cyan;
+
+    cursor: pointer;
+
+    transition:
+        all 0.3s ease;
+
+}
+
 
 #results button:hover {
-  background: cyan;
-  color: #000;
-  transform: scale(1.05);
+
+    background: cyan;
+
+    color: #000;
+
+    transform: scale(1.05);
+
 }
 
-/* ---------------- Outcome Image Spin Animation (4s) ---------------- */
+
+/* ======================================================
+   OUTCOME IMAGE SPIN
+====================================================== */
+
 @keyframes spinDrop {
-  0% {
-    transform: rotateY(0deg) scale(1);
-  }
-  100% {
-    transform: rotateY(720deg) scale(1); /* spins 5 full turns (360*5) */
-  }
+
+    0% {
+
+        transform:
+            rotateY(0deg)
+            scale(1);
+
+    }
+
+    100% {
+
+        transform:
+            rotateY(720deg)
+            scale(1);
+
+    }
+
 }
+
 
 .outcome-spin {
-  animation: spinDrop 1s linear forwards; /* spin lasts 3 seconds, then stops */
-  display: inline-block;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+
+    animation:
+        spinDrop 1s linear forwards;
+
+    display: inline-block;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.5);
+
 }
 
-/* ---------------- Responsive ---------------- */
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
 @media (max-width: 768px) {
-  h2 {
-    font-size: 1.5rem;
-  }
 
-  .option, .option-img {
-    min-width: 120px;
-    min-height: 60px;
-    font-size: 1rem;
-    padding: 15px 25px;
-  }
+    h2 {
 
-  .option-img img {
-    width: 120px;
-  }
+        font-size: 1.5rem;
 
-  #startBtn {
-    font-size: 1.5rem;
-    padding: 20px 50px;
-  }
+    }
+
+
+    h3 {
+
+        font-size: 1rem;
+
+    }
+
+
+    .option,
+    .option-img {
+
+        min-width: 120px;
+
+        min-height: 60px;
+
+        font-size: 1rem;
+
+        padding: 15px 25px;
+
+    }
+
+
+    .option-img img {
+
+        width: 120px;
+
+    }
+
+
+    #startBtn {
+
+        font-size: 1.5rem;
+
+        padding: 20px 50px;
+
+    }
+
+
+    .scale-container {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .scale-options {
+
+        flex-wrap: wrap;
+
+    }
+
 }
+```
