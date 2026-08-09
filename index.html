@@ -1,106 +1,351 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithmic Stage</title>
+    <title>Algorithmic Performance</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="container">
-        <!-- START PAGE -->
-        <section id="startPage" class="page active">
-            <img src="Logo.png" alt="Logo" class="logo">
-            <button id="startBtn">Start</button>
-        </section>
 
-        <!-- QUESTION 1 -->
-        <section id="q1" class="page">
-            <h2>Which topics interest you?</h2>
-            <div class="options">
-                <div class="option" onclick="nextQuestion('q1','Art')">Art</div>
-                <div class="option" onclick="nextQuestion('q1','Politics')">Politics</div>
-                <div class="option" onclick="nextQuestion('q1','Entertainment')">Entertainment</div>
-                <div class="option" onclick="nextQuestion('q1','Technology')">Technology</div>
+<div id="container">
+
+    <!-- START PAGE -->
+    <section id="startPage" class="page active">
+
+        <img
+            src="start.png"
+            alt="Start"
+            class="logo"
+        >
+
+        <button id="startBtn">
+            Start
+        </button>
+
+    </section>
+
+
+    <!-- QUESTION 1 -->
+    <section id="q1" class="page">
+
+        <h2>Which topics interest you?</h2>
+
+        <div class="options">
+
+            <div
+                class="option"
+                onclick="nextQuestion('q1','Art')">
+                Art
             </div>
-        </section>
 
-        <!-- QUESTION 2 -->
-        <section id="q2" class="page">
-            <h2>When you see content, what do you usually do?</h2>
-            <div class="options">
-                <div class="option" onclick="nextQuestion('q2','Like')">Like</div>
-                <div class="option" onclick="nextQuestion('q2','Comment')">Comment</div>
-                <div class="option" onclick="nextQuestion('q2','Share')">Share</div>
-                <div class="option" onclick="nextQuestion('q2','Scroll')">Scroll</div>
+            <div
+                class="option"
+                onclick="nextQuestion('q1','Politics')">
+                Politics
             </div>
-        </section>
 
-        <!-- QUESTION 3 -->
-        <section id="q3" class="page">
-            <h2>Which of these images capture your attention?</h2>
-            <div class="options">
-                <div class="option-img" onclick="nextQuestion('q3','A')"><img src="A.png" alt="A"></div>
-                <div class="option-img" onclick="nextQuestion('q3','B')"><img src="B.png" alt="B"></div>
-                <div class="option-img" onclick="nextQuestion('q3','C')"><img src="C.png" alt="C"></div>
+            <div
+                class="option"
+                onclick="nextQuestion('q1','Entertainment')">
+                Entertainment
             </div>
-        </section>
 
-        <!-- QUESTION 4 -->
-        <section id="q4" class="page">
-            <h2>If you could post one of these images on your profile, which would you choose?</h2>
-            <div class="options">
-                <div class="option-img" onclick="nextQuestion('q4','A-funny')"><img src="A-funny.png" alt="A-funny"></div>
-                <div class="option-img" onclick="nextQuestion('q4','B-serious')"><img src="B-serious.png" alt="B-serious"></div>
-                <div class="option-img" onclick="nextQuestion('q4','C-aspiration')"><img src="C- aspiration.png" alt="C-aspiration"></div>
+            <div
+                class="option"
+                onclick="nextQuestion('q1','Technology')">
+                Technology
             </div>
-        </section>
 
-        <!-- QUESTION 5 -->
-        <section id="q5" class="page">
-            <h2>Would you share content that is popular but might be misleading?</h2>
-            <div class="options">
-                <div class="option" onclick="nextQuestion('q5','Yes')">Yes</div>
-                <div class="option" onclick="nextQuestion('q5','No')">No</div>
-                <div class="option" onclick="nextQuestion('q5','Unsure')">Unsure</div>
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION 2 -->
+    <section id="q2" class="page">
+
+        <h2>
+            When you see content, what do you usually do?
+        </h2>
+
+        <div class="options">
+
+            <div
+                class="option"
+                onclick="nextQuestion('q2','Like')">
+                Like
             </div>
-        </section>
 
-        <!-- QUESTION 6 -->
-        <section id="q6" class="page">
-            <h2>Content similar to what you chose, or explore something unexpected?</h2>
-            <div class="options">
-                <div class="option" onclick="nextQuestion('q6','Similar')">Similar</div>
-                <div class="option" onclick="nextQuestion('q6','Unexpected')">Unexpected</div>
+            <div
+                class="option"
+                onclick="nextQuestion('q2','Comment')">
+                Comment
             </div>
-        </section>
 
-        <!-- QUESTION 7 -->
-        <section id="q7" class="page">
-            <h2>How aware are you that your choices are shaping what you see?</h2>
-            <div class="scale-container">
-                <span class="scale-label left">Unaware</span>
-                <div class="scale-options">
-                    <div class="option" onclick="nextQuestion('q7',1)">1</div>
-                    <div class="option" onclick="nextQuestion('q7',2)">2</div>
-                    <div class="option" onclick="nextQuestion('q7',3)">3</div>
-                    <div class="option" onclick="nextQuestion('q7',4)">4</div>
-                    <div class="option" onclick="nextQuestion('q7',5)">5</div>
+            <div
+                class="option"
+                onclick="nextQuestion('q2','Share')">
+                Share
+            </div>
+
+            <div
+                class="option"
+                onclick="nextQuestion('q2','Scroll')">
+                Scroll
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION 3 -->
+    <section id="q3" class="page">
+
+        <h2>
+            Which of these images capture your attention?
+        </h2>
+
+        <div class="options">
+
+            <div
+                class="option-img"
+                onclick="nextQuestion('q3','A')">
+
+                <img
+                    src="A.png"
+                    alt="A"
+                >
+
+            </div>
+
+
+            <div
+                class="option-img"
+                onclick="nextQuestion('q3','B')">
+
+                <img
+                    src="B.png"
+                    alt="B"
+                >
+
+            </div>
+
+
+            <div
+                class="option-img"
+                onclick="nextQuestion('q3','C')">
+
+                <img
+                    src="C.png"
+                    alt="C"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION 4 -->
+    <section id="q4" class="page">
+
+        <h2>
+            If you could post one of these images on your profile,
+            which would you choose?
+        </h2>
+
+        <div class="options">
+
+            <div
+                class="option-img"
+                onclick="nextQuestion('q4','A-funny')">
+
+                <img
+                    src="A-funny.png"
+                    alt="A-funny"
+                >
+
+            </div>
+
+
+            <div
+                class="option-img"
+                onclick="nextQuestion('q4','B-serious')">
+
+                <img
+                    src="B-serious.png"
+                    alt="B-serious"
+                >
+
+            </div>
+
+
+            <div
+                class="option-img"
+                onclick="nextQuestion('q4','C-aspiration')">
+
+                <img
+                    src="C-aspiration.png"
+                    alt="C-aspiration"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION 5 -->
+    <section id="q5" class="page">
+
+        <h2>
+            Would you share content that is popular but might be misleading?
+        </h2>
+
+        <div class="options">
+
+            <div
+                class="option"
+                onclick="nextQuestion('q5','Yes')">
+                Yes
+            </div>
+
+            <div
+                class="option"
+                onclick="nextQuestion('q5','No')">
+                No
+            </div>
+
+            <div
+                class="option"
+                onclick="nextQuestion('q5','Unsure')">
+                Unsure
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION 6 -->
+    <section id="q6" class="page">
+
+        <h2>
+            Content similar to what you chose,
+            or explore something unexpected?
+        </h2>
+
+        <div class="options">
+
+            <div
+                class="option"
+                onclick="nextQuestion('q6','Similar')">
+                Similar
+            </div>
+
+            <div
+                class="option"
+                onclick="nextQuestion('q6','Unexpected')">
+                Unexpected
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION 7 -->
+    <section id="q7" class="page">
+
+        <h2>
+            How aware are you that your choices are shaping what you see?
+        </h2>
+
+        <div class="scale-container">
+
+            <span class="scale-label left">
+                Unaware
+            </span>
+
+            <div class="scale-options">
+
+                <div
+                    class="option"
+                    onclick="nextQuestion('q7',1)">
+                    1
                 </div>
-                <span class="scale-label right">Very Aware</span>
+
+                <div
+                    class="option"
+                    onclick="nextQuestion('q7',2)">
+                    2
+                </div>
+
+                <div
+                    class="option"
+                    onclick="nextQuestion('q7',3)">
+                    3
+                </div>
+
+                <div
+                    class="option"
+                    onclick="nextQuestion('q7',4)">
+                    4
+                </div>
+
+                <div
+                    class="option"
+                    onclick="nextQuestion('q7',5)">
+                    5
+                </div>
+
             </div>
-        </section>
 
-        <!-- RESULTS PAGE -->
-        <section id="results" class="page">
-            <h2>Your Algorithmic Performance</h2>
-            <div id="resultsContainer"></div>
-            <h4>Click the profile to see more closely.</h4>
+            <span class="scale-label right">
+                Very Aware
+            </span>
 
-            <h3>This profile was generated based on the signals your behaviour produced during the survey</h3>
-            <button onclick="goToNextSection()">Ready to move on?</button>
-        </section>
-    </div>
-    <script src="script.js"></script>
+        </div>
+
+    </section>
+
+
+    <!-- RESULTS PAGE -->
+    <section id="results" class="page">
+
+        <h2>
+            Your Algorithmic Performance
+        </h2>
+
+        <div id="resultsContainer"></div>
+
+        <h4>
+            Click the profile to see more closely.
+        </h4>
+
+        <h3>
+            This profile was generated based on the signals
+            your behaviour produced during the survey
+        </h3>
+
+        <button onclick="goToNextSection()">
+            Ready to move on?
+        </button>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
+```
